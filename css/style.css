@@ -208,7 +208,7 @@ body {
         height: 100vh;
 
         z-index: 999;
-        overflow: hidden;
+        overflow: auto;
 
         background: var(--color-2);
 
