@@ -628,30 +628,6 @@ body {
     }
 }
 
-/*Header*/
-
-.main-link-header {
-    padding: 0;
-
-    font-size: 18px;
-    line-height: 1.3;
-    font-weight: 800;
-    letter-spacing: 0.03em;
-
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.first-part-header {
-    color: var(--color-6);
-}
-
-.second-part-header {
-    color: var(--color-1);
-}
-
-/*For every list on the web*/
-
 
 
 
@@ -668,15 +644,31 @@ body {
         width: 100%;
         height: auto;
 
-        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/header-photo.jpg");
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-optimized/phone.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
     }
 
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .greeting {
+            background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-optimized/phone@2x.jpg");
+        }
+    }
+
+    @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+        .greeting {
+            background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-optimized/phone@3x.jpg");
+        }
+    }
+
     .greeting .container {
         margin: 0;
-    } 
+    }
 
     .main-starting {
         margin-bottom: 48px;
@@ -724,10 +716,26 @@ body {
         width: 100%;
         height: auto;
 
-        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/header-photo.jpg");
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-optimized/tablet.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .greeting {
+            background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-optimized/tablet@2x.jpg");
+        }
+    }
+
+    @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+        .greeting {
+            background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-optimized/tablet@3x.jpg");
+        }
     }
 
     .main-starting {
@@ -767,16 +775,35 @@ body {
 
 @media screen and (min-width: 1135px) {
     .greeting {
+        display: block;
+
         margin: 0 auto;
         padding: 192px 0;
         text-align: center;
 
-        max-width: 1440px;
-        height: 603px;
-        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/header-photo.jpg");
+        width: 1440px;
+        height: auto;
+
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-optimized/desktop.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .greeting {
+            background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-optimized/desktop@2x.jpg");
+        }
+    }
+
+    @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+        .greeting {
+            background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-optimized/desktop@3x.jpg");
+        }
     }
 
     .main-starting {
@@ -797,6 +824,7 @@ body {
         border-radius: 4px;
         border: none;
         font-family: inherit;
+        
         cursor: pointer;
 
         color: var(--color-2);
@@ -3472,7 +3500,7 @@ body {
     height: 584px;
 
     opacity: 1;
-    background: #FCFCFC;
+    background: var(--color-2);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 }
