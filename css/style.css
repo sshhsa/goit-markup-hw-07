@@ -641,7 +641,7 @@ body {
         padding: 112px 0px;
         text-align: center;
 
-        width: 100%;
+        max-width: 100%;
         height: auto;
 
         background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-optimized/phone.jpg");
@@ -713,7 +713,7 @@ body {
         padding: 110px 0px;
         text-align: center;
 
-        width: 100%;
+        max-width: 100%;
         height: auto;
 
         background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-optimized/tablet.jpg");
@@ -1162,7 +1162,7 @@ body {
 
     .list-employments .list-li img {
         display: block;
-        width: 100%;
+        max-width: 100%;
         height: auto;
     }
 }
@@ -1222,7 +1222,7 @@ body {
 
     .person-item-img {
         display: block;
-        width: 100%;
+        max-width: 100%;
         height: auto;
     }
 
