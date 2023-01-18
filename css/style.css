@@ -726,7 +726,7 @@ body {
     }
 
     @media (min-device-pixel-ratio: 3),
-    (min-resolution: dpi),
+    (min-resolution: 288dpi),
     (min-resolution: 3dppx) {
         .greeting {
             background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-optimized/tablet@3x.jpg");
@@ -771,6 +771,7 @@ body {
 @media screen and (min-width: 1135px) {
     .greeting {
         display: block;
+        margin: 0 auto;
 
         padding: 192px 0;
         text-align: center;
@@ -2267,7 +2268,7 @@ body {
 
     .footer_alignment {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
 
         padding: 0;
     }
@@ -2288,7 +2289,6 @@ body {
 
     .social_media {
         margin: 0;
-        margin-left: 120px;
     }
 
     .footer-label-icon {
@@ -2505,32 +2505,17 @@ body {
         margin-bottom: 72px;
     }
 
-    .list-portfolio-nav,
-    .list-portfolio-photos {
-        list-style-type: none;
-    }
-
     .list-portfolio-nav {
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
-        margin-left: 0;
+        gap: 24px;
+
+        margin-right: auto;
 
         width: 279px;
 
         list-style-type: none;
-    }
-
-    .list-portfolio-nav :nth-child(3n) {
-        margin-right: 0;
-    }
-
-    .list-portfolio-nav :nth-child(n + 4) {
-        margin-top: 16px;
-    }
-
-    .list-portfolio-nav :not(:last-child) {
-        margin-right: 24px;
     }
 
     .list-portfolio-nav .button-items-1,
@@ -2585,11 +2570,6 @@ body {
         background-color: var(--color-6);
     }
 
-    .container-portfolio-grid {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     .list-portfolio-photos {
         display: flex;
         flex-wrap: wrap;
@@ -2600,6 +2580,8 @@ body {
         margin-bottom: -48px;
 
         padding-left: 0;
+
+        list-style-type: none;
     }
 
     .li-portfolio {
@@ -3139,15 +3121,9 @@ body {
     .form_portfolio {
         display: flex;
 
-        margin-left: 80px;
-        margin-right: 0;
-        margin-left: 0;
-
         position: relative;
 
         text-align: center;
-
-        width: 458px;
     }
 
     .h2_form_portfolio {
@@ -3202,7 +3178,7 @@ body {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-65%, 100%);
+        transform: translate(-50%, 100%);
     }
 
     .form_button_portfolio {
@@ -3344,8 +3320,6 @@ body {
 @media screen and (min-width: 1135px) {
     .form_portfolio {
         display: flex;
-
-        margin-left: 80px;
 
         position: relative;
 

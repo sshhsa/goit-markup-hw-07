@@ -243,7 +243,11 @@
           <ul class="list-employments">
             <li class="list-li">
               <img
-                srcset="./images/What-are-we-doing/employment-1.jpg 1x, ./images/What-are-we-doing/employment-1.jpg 2x, ./images/What-are-we-doing/employment-1.jpg3x"
+                srcset="
+                  ./images/What-are-we-doing/employment-1.jpg   1x,
+                  ./images/What-are-we-doing/employment-1.jpg   2x,
+                  ./images/What-are-we-doing/employment-1.jpg3x
+                "
                 src="./images/What-are-we-doing/employment-1.jpg"
                 alt="employment-1"
                 width="360"
@@ -253,8 +257,12 @@
 
             <li class="list-li">
               <img
-                srcset="./images/What-are-we-doing/employment-2.jpg 1x, ./images/What-are-we-doing/employment-2.jpg 2x, ./images/What-are-we-doing/employment-2.jpg 3x"
-                src="./images/What-are-we-doing/employment-2.jpg" 
+                srcset="
+                  ./images/What-are-we-doing/employment-2.jpg 1x,
+                  ./images/What-are-we-doing/employment-2.jpg 2x,
+                  ./images/What-are-we-doing/employment-2.jpg 3x
+                "
+                src="./images/What-are-we-doing/employment-2.jpg"
                 alt="employment-2"
                 width="360"
                 height="300"
@@ -262,7 +270,11 @@
             </li>
             <li>
               <img
-                srcset="./images/What-are-we-doing/employment-3.jpg 1x, ./images/What-are-we-doing/employment-3.jpg 2x, ./images/What-are-we-doing/employment-3.jpg 3x"
+                srcset="
+                  ./images/What-are-we-doing/employment-3.jpg 1x,
+                  ./images/What-are-we-doing/employment-3.jpg 2x,
+                  ./images/What-are-we-doing/employment-3.jpg 3x
+                "
                 src="./images/What-are-we-doing/employment-3.jpg"
                 alt="employment-3"
                 width="360"
@@ -279,18 +291,31 @@
 
           <ul class="list-team">
             <li class="person-item">
-              <img
-                class="person-item-img"
-                srcset="
-                  images/Our-team/person-1.jpg 1x,
-                  images/Our-team/person-1@2x.jpg 2x,
-                  images/Our-team/person-1@3x.jpg 3x
-                "
-                src="images/Our-team/person-1.jpg"
-                alt="person-1"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    images/Our-team/person-1.webp    1x,
+                    images/Our-team/person-1@2x.webp 2x,
+                    images/Our-team/person-1@3x.webp 3x
+                  "
+                />
+                <source
+                  srcset="
+                    images/Our-team/person-1.jpg    1x,
+                    images/Our-team/person-1@2x.jpg 2x,
+                    images/Our-team/person-1@3x.jpg 3x
+                  "
+                />
+
+                <img
+                  class="person-item-img"
+                  src="images/Our-team/person-1.jpg"
+                  alt="person-1"
+                  width="264"
+                  height="260"
+                />
+              </picture>
+
               <div class="person-item-div">
                 <h3 class="names">Mark Guerrero</h3>
                 <p class="position">Product Designer</p>
@@ -337,18 +362,31 @@
             </li>
 
             <li class="person-item">
-              <img
-                class="person-item-img"
-                srcset="
-                  images/Our-team/person-2.jpg 1x,
-                  images/Our-team/person-2@2x.jpg 2x,
-                  images/Our-team/person-2@3x.jpg 3x
-                "
-                src="images/Our-team/person-2.jpg"
-                alt="person-2"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    images/Our-team/person-2.webp    1x,
+                    images/Our-team/person-2@2x.webp 2x,
+                    images/Our-team/person-2@3x.webp 3x
+                  "
+                />
+                <source
+                  srcset="
+                    images/Our-team/person-2.jpg    1x,
+                    images/Our-team/person-2@2x.jpg 2x,
+                    images/Our-team/person-2@3x.jpg 3x
+                  "
+                />
+
+                <img
+                  class="person-item-img"
+                  src="images/Our-team/person-2.jpg"
+                  alt="person-2"
+                  width="264"
+                  height="260"
+                />
+              </picture>
+
               <div class="person-item-div">
                 <h3 class="names">Tom Ford</h3>
                 <p class="position">Frontend Developer</p>
@@ -395,18 +433,31 @@
             </li>
 
             <li class="person-item">
-              <img
-                class="person-item-img"
-                srcset="
-                  images/Our-team/person-3.jpg 1x,
-                  images/Our-team/person-3@2x.jpg 2x,
-                  images/Our-team/person-3@3x.jpg 3x
-                "
-                src="images/Our-team/person-3.jpg"
-                alt="person-3"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    images/Our-team/person-3.webp    1x,
+                    images/Our-team/person-3@2x.webp 2x,
+                    images/Our-team/person-3@3x.webp 3x
+                  "
+                />
+                <source
+                  srcset="
+                    images/Our-team/person-3.jpg    1x,
+                    images/Our-team/person-3@2x.jpg 2x,
+                    images/Our-team/person-3@3x.jpg 3x
+                  "
+                />
+
+                <img
+                  class="person-item-img"
+                  src="images/Our-team/person-3.jpg"
+                  alt="person-3"
+                  width="264"
+                  height="260"
+                />
+              </picture>
+
               <div class="person-item-div">
                 <h3 class="names">Camila Garcia</h3>
                 <p class="position">Marketing</p>
@@ -453,18 +504,31 @@
             </li>
 
             <li class="person-item">
-              <img
-                class="person-item-img"
-                srcset="
-                  images/Our-team/person-4.jpg 1x,
-                  images/Our-team/person-4@2x.jpg 2x,
-                  images/Our-team/person-4@3x.jpg 3x
-                "
-                src="images/Our-team/person-4.jpg"
-                alt="person-4"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    images/Our-team/person-4.webp    1x,
+                    images/Our-team/person-4@2x.webp 2x,
+                    images/Our-team/person-4@3x.webp 3x
+                  "
+                />
+                <source
+                  srcset="
+                    images/Our-team/person-4.jpg    1x,
+                    images/Our-team/person-4@2x.jpg 2x,
+                    images/Our-team/person-4@3x.jpg 3x
+                  "
+                />
+
+                <img
+                  class="person-item-img"
+                  src="images/Our-team/person-4.jpg"
+                  alt="person-4"
+                  width="264"
+                  height="260"
+                />
+              </picture>
+
               <div class="person-item-div">
                 <h3 class="names">Daniel Wilson</h3>
                 <p class="position">UI Designer</p>
