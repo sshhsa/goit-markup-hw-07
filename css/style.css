@@ -48,7 +48,9 @@ body {
 
 @media screen and (min-width: 320px) and (max-width: 427.98px) {
     .container {
-        width: 100%;
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -657,6 +659,8 @@ body {
 
     .main-starting {
         margin-bottom: 48px;
+
+        max-width: 319px;
 
         font-weight: 700;
         font-size: 36px;
@@ -1820,13 +1824,9 @@ body {
         background-color: var(--color-1);
     }
 
-    .footer_alignment {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
     .footer_alignment .social_media {
-        margin: 72px 0px;
+        margin-top: 72px;
+        margin-bottom: 72px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1834,15 +1834,13 @@ body {
     .footer-div {
         margin-left: auto;
         margin-right: auto;
+
+        width: 264px;
     }
 
     .footer-text {
         margin: 0;
         margin-top: 16px;
-
-        text-align: left;
-
-        max-width: 264px;
 
         font-size: 16px;
         line-height: 1.5;
@@ -1866,6 +1864,8 @@ body {
 
     .footer-list {
         display: flex;
+        justify-content: center;
+
         list-style-type: none;
     }
 
@@ -1901,15 +1901,11 @@ body {
     }
 
     .form {
-        display: flex;
+        display: block;
 
         margin: 72px 0px 0px 0px;
 
         position: relative;
-    }
-
-    .form_footer {
-        max-width: 0px 0px 0px 135px;
     }
 
     .h2-form {
@@ -1932,15 +1928,14 @@ body {
         padding: 0;
         padding: 8px 16px;
 
-        width: 396px;
-        height: 40px;
+        position: relative;
 
-        font-weight: 400;
+        width: 100%;
+        height: auto;
+
         font-size: 12px;
         line-height: 2;
         letter-spacing: 0.04em;
-
-        position: relative;
 
         border: 1px solid var(--color-form-border);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1978,6 +1973,8 @@ body {
         align-items: center;
 
         margin: 24px 0px 0px 0px;
+        margin-left: auto;
+        margin-right: auto;
 
         position: absolute;
         top: 100%;
