@@ -92,7 +92,9 @@
 
         <ul class="list-phone-modal">
           <li class="link-phone-modal">
-            <a class="link-phone-modal-a link-phone-modal-studio" href="#">Studio</a>
+            <a class="link-phone-modal-a link-phone-modal-studio" href="#"
+              >Studio</a
+            >
           </li>
           <li class="link-phone-modal">
             <a class="link-phone-modal-a" href="./portfolio.html">Portfolio</a>
@@ -241,45 +243,81 @@
           <h2 class="title-photos">What are we doing?</h2>
 
           <ul class="list-employments">
-            <li class="list-li">
-              <img
-                srcset="
-                  ./images/What-are-we-doing/employment-1.jpg   1x,
-                  ./images/What-are-we-doing/employment-1.jpg   2x,
-                  ./images/What-are-we-doing/employment-1.jpg3x
-                "
-                src="./images/What-are-we-doing/employment-1.jpg"
-                alt="employment-1"
-                width="360"
-                height="300"
-              />
+            <li class="list-li-employment">
+              <picture>
+                <source
+                  srcset="
+                    ./images/What-are-we-doing/employment-1.webp 1x,
+                    ./images/What-are-we-doing/employment-1.webp 2x,
+                    ./images/What-are-we-doing/employment-1.webp 3x
+                  "
+                />
+                <source
+                  srcset="
+                    ./images/What-are-we-doing/employment-1.jpg 1x,
+                    ./images/What-are-we-doing/employment-1.jpg 2x,
+                    ./images/What-are-we-doing/employment-1.jpg 3x
+                  "
+                />
+                <img
+                  class="img-employment"
+                  src="./images/What-are-we-doing/employment-1.jpg"
+                  alt="employment-1"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
 
-            <li class="list-li">
-              <img
-                srcset="
-                  ./images/What-are-we-doing/employment-2.jpg 1x,
-                  ./images/What-are-we-doing/employment-2.jpg 2x,
-                  ./images/What-are-we-doing/employment-2.jpg 3x
-                "
-                src="./images/What-are-we-doing/employment-2.jpg"
-                alt="employment-2"
-                width="360"
-                height="300"
-              />
+            <li class="list-li-employment">
+              <picture>
+                <source
+                  srcset="
+                    ./images/What-are-we-doing/employment-2.webp 1x,
+                    ./images/What-are-we-doing/employment-2.webp 2x,
+                    ./images/What-are-we-doing/employment-2.webp 3x
+                  "
+                />
+                <source
+                  srcset="
+                    ./images/What-are-we-doing/employment-2.jpg 1x,
+                    ./images/What-are-we-doing/employment-2.jpg 2x,
+                    ./images/What-are-we-doing/employment-2.jpg 3x
+                  "
+                />
+                <img
+                  class="img-employment"
+                  src="./images/What-are-we-doing/employment-2.jpg"
+                  alt="employment-2"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
-            <li>
-              <img
-                srcset="
-                  ./images/What-are-we-doing/employment-3.jpg 1x,
-                  ./images/What-are-we-doing/employment-3.jpg 2x,
-                  ./images/What-are-we-doing/employment-3.jpg 3x
-                "
-                src="./images/What-are-we-doing/employment-3.jpg"
-                alt="employment-3"
-                width="360"
-                height="300"
-              />
+            <li class="list-li-employment">
+              <picture>
+                <source
+                  srcset="
+                    ./images/What-are-we-doing/employment-3.webp 1x,
+                    ./images/What-are-we-doing/employment-3.webp 2x,
+                    ./images/What-are-we-doing/employment-3.webp 3x
+                  "
+                />
+                <source
+                  srcset="
+                    ./images/What-are-we-doing/employment-3.jpg 1x,
+                    ./images/What-are-we-doing/employment-3.jpg 2x,
+                    ./images/What-are-we-doing/employment-3.jpg 3x
+                  "
+                />
+                <img
+                  class="img-employment"
+                  src="./images/What-are-we-doing/employment-3.jpg"
+                  alt="employment-3"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -298,6 +336,7 @@
                     images/Our-team/person-1@2x.webp 2x,
                     images/Our-team/person-1@3x.webp 3x
                   "
+                  type="image/webp"
                 />
                 <source
                   srcset="
@@ -305,6 +344,7 @@
                     images/Our-team/person-1@2x.jpg 2x,
                     images/Our-team/person-1@3x.jpg 3x
                   "
+                  type="image/jpg"
                 />
 
                 <img
@@ -369,6 +409,7 @@
                     images/Our-team/person-2@2x.webp 2x,
                     images/Our-team/person-2@3x.webp 3x
                   "
+                  type="image/webp"
                 />
                 <source
                   srcset="
@@ -376,6 +417,7 @@
                     images/Our-team/person-2@2x.jpg 2x,
                     images/Our-team/person-2@3x.jpg 3x
                   "
+                  type="image/jpg"
                 />
 
                 <img
@@ -440,6 +482,7 @@
                     images/Our-team/person-3@2x.webp 2x,
                     images/Our-team/person-3@3x.webp 3x
                   "
+                  type="image/webp"
                 />
                 <source
                   srcset="
@@ -447,6 +490,7 @@
                     images/Our-team/person-3@2x.jpg 2x,
                     images/Our-team/person-3@3x.jpg 3x
                   "
+                  type="image/jpg"
                 />
 
                 <img
@@ -511,6 +555,7 @@
                     images/Our-team/person-4@2x.webp 2x,
                     images/Our-team/person-4@3x.webp 3x
                   "
+                  type="image/webp"
                 />
                 <source
                   srcset="
@@ -518,6 +563,7 @@
                     images/Our-team/person-4@2x.jpg 2x,
                     images/Our-team/person-4@3x.jpg 3x
                   "
+                  type="image/jpg"
                 />
 
                 <img
