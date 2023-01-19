@@ -19,12 +19,31 @@
   </head>
   <body>
     <header>
-      <div class="container container-header">
-        <nav class="header-nav">
-          <a href="#" class="main-link-header"
+      <div class="container container-header-portfolio">
+        <nav class="header-nav-portfolio">
+          <a href="./index.html" class="main-link-header"
             ><span class="first-part-header">Web</span
             ><span class="second-part-header">studio</span></a
           >
+
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
 
           <ul class="top-list list-nav">
             <li class="list-li-nav">
@@ -55,12 +74,19 @@
         </ul>
       </div>
 
-      <div class="nav-menu-phone">
-        <button class="button-icon-modal">
-          <svg class="icon-modal-close">
-            <use
-              href="./images/Modal window/symbol-defs.svg#icon-close-black"
-            ></use>
+      <div class="nav-menu-phone-portfolio js-menu-container" id="mobile-menu">
+        <button class="menu-toggle-close js-close-menu">
+          <svg
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
           </svg>
         </button>
 
@@ -69,7 +95,11 @@
             <a class="link-phone-modal-a" href="./index.html">Studio</a>
           </li>
           <li class="link-phone-modal">
-            <a class="link-phone-modal-a" href="#">Portfolio</a>
+            <a
+              class="link-phone-modal-a link-phone-modal-portfolio"
+              href="#"
+              >Portfolio</a
+            >
           </li>
           <li class="link-phone-modal">
             <a class="link-phone-modal-a" href="#">Contacts</a>
@@ -471,5 +501,13 @@
         </div>
       </section>
     </footer>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
