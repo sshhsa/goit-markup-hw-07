@@ -1930,7 +1930,7 @@ body {
 
         position: relative;
 
-        width: 100%;
+        width: auto;
         height: auto;
 
         font-size: 12px;
@@ -1972,9 +1972,8 @@ body {
         justify-content: center;
         align-items: center;
 
-        margin: 24px 0px 0px 0px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
+        margin-top: 24px;
 
         position: absolute;
         top: 100%;
