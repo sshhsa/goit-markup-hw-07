@@ -49,8 +49,6 @@ body {
 @media screen and (min-width: 320px) and (max-width: 427.98px) {
     .container {
         width: 320px;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 
@@ -61,7 +59,7 @@ body {
         padding-left: 15px;
         padding-right: 15px;
 
-        width: 428px;
+        max-width: 428px;
     }
 
     .top-list,
@@ -152,7 +150,7 @@ body {
 
         padding: 24px 16px;
 
-        width: 100%;
+        max-width: 100%;
     }
 
     .header-nav {
@@ -659,6 +657,8 @@ body {
 
     .main-starting {
         margin-bottom: 48px;
+        margin-left: auto;
+        margin-right: auto;
 
         max-width: 319px;
 
@@ -728,6 +728,10 @@ body {
 
     .main-starting {
         margin-bottom: 48px;
+        margin-left: auto;
+        margin-right: auto;
+
+        max-width: 494px;
 
         font-weight: 700;
         font-size: 56px;
@@ -797,6 +801,10 @@ body {
 
     .main-starting {
         margin-bottom: 48px;
+        margin-left: auto;
+        margin-right: auto;
+
+        width: 494px;
 
         font-weight: 700;
         font-size: 56px;
@@ -1544,11 +1552,6 @@ body {
         padding: 96px 0px;
     }
 
-    .customers-area .container {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     .label-customers {
         margin-bottom: 72px;
 
@@ -1579,16 +1582,8 @@ body {
         width: 190px;
     }
 
-    .customers :nth-child(2n) {
-        margin-right: 0;
-    }
-
     .customers :nth-child(n + 5) {
         margin-bottom: 0;
-    }
-
-    .li-customers+.li-customers {
-        margin-left: 0;
     }
 
     .customers-a {
@@ -1623,6 +1618,12 @@ body {
     .customers-icon:focus,
     .customers-icon:active {
         fill: var(--color-6);
+    }
+}
+
+@media screen and (min-width: 427.98px) and (max-width: 767.98px) {
+    .customers :nth-child(2n) {
+        margin-right: 0;
     }
 }
 
@@ -1774,6 +1775,26 @@ body {
     .customers-icon:focus,
     .customers-icon:active {
         fill: var(--color-6);
+    }
+}
+
+/* Addition styles */
+
+@media screen and (min-width: 320px) and (max-width: 427.98px) {
+    .customers {
+        display: block;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .customers :nth-child(5) {
+        margin-bottom: 72px;
+    }
+
+    .li-customers {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -1930,7 +1951,7 @@ body {
 
         position: relative;
 
-        width: auto;
+        width: 100%;
         height: auto;
 
         font-size: 12px;
